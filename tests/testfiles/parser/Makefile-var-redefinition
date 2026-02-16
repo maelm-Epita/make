@@ -1,0 +1,3 @@
+VAR=hello
+VAR=world
+$(VAR)=isyours

@@ -1,0 +1,4 @@
+var = world
+
+all:
+	echo hello $(var)

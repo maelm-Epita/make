@@ -1,0 +1,19 @@
+# variables
+')' = 'haha'
+'haha' = 'yo'
+'o' = 'b'
+'bbnjour' = 'monsieur'
+'FOO' = '$(BAR)'
+'BAR' = '4'
+'4' = '2'
+# rules
+(all): [yo] [hey] [hey$]
+	'echo "wow this file is tricky" '
+	'echo $(haha)'
+	'echo $(bbnjour)'
+	'echo $(FOO)'
+	'echo $($(FOO))'
+	'echo $4'
+(yo):
+	'echo "this is the yo rule, is it reachable?"'
+(hey):

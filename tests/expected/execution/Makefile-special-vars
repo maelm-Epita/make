@@ -1,0 +1,10 @@
+echo "simple"
+simple
+echo "haha"
+haha
+echo rule
+rule
+echo simpledep
+simpledep
+echo simpledep otherdep
+simpledep otherdep

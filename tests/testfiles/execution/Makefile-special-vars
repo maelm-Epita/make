@@ -1,0 +1,10 @@
+rule: simpledep otherdep
+	echo $@
+	echo $<
+	echo $^
+
+simpledep:
+	echo "simple"
+
+otherdep:
+	echo "haha"

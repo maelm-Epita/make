@@ -1,0 +1,5 @@
+FOO=BAR
+$(FOO)=this-is-my-value
+
+all:
+	echo $(BAR)

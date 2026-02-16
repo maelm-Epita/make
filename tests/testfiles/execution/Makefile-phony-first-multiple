@@ -1,0 +1,7 @@
+.PHONY: all test
+
+all:
+	echo all
+
+test:
+	echo test

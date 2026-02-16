@@ -1,0 +1,25 @@
+CC=gcc
+CFLAGS=-std=c99 -pedantic -Werror -Wall -Wextra -Wvla -Isrc/
+
+TARGET=minimake
+CHECK=check
+
+#SRCFILES=src/minimake.c src/hash_map.c src/parser.c src/rule.c src/builder.c src/expansion.c src/helpers.c src/main.c
+
+OBJ=src/main.o src/minimake.o src/parser.o src/builder.o src/expansion.o src/pattern.o src/hash_map.o src/rule.o src/helpers.o
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ) 
+	$(CC) $^ -o $@
+
+.PHONY: clean
+
+clean:
+	rm -f $(TARGET) $(OBJ) *.gcda *.gcno *.css *.html
+
+check:
+	./tests/testsuite.sh ./minimake ./tests/
+
+%.o: %.c
+	$(CC) -c $(CFLAGS) $^ -o $@

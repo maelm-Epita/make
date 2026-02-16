@@ -1,0 +1,18 @@
+echo %.c %.c
+%.c %.c
+echo %o.c foo.c
+%o.c foo.c
+echo bar.c bar.c
+bar.c bar.c
+echo double%
+double%
+echo %.c test.c
+%.c test.c
+echo mid
+mid
+echo mBONJOURid
+mBONJOURid
+echo end
+end
+echo endBONJOUR
+endBONJOUR

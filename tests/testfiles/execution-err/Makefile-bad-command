@@ -1,0 +1,4 @@
+falseRule:
+	@false
+notACommandRule:
+	@notACommand

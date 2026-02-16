@@ -1,0 +1,19 @@
+%.c:
+	echo %.c $@
+
+all: %.c foo.c foo.c bar.c double% test.c mid mBONJOURid end endBONJOUR
+
+%o.c:
+	echo %o.c $@
+
+bar.c:
+	echo bar.c $@
+
+%double%:
+	echo $@
+
+m%id:
+	echo $@
+
+end%:
+	echo $@

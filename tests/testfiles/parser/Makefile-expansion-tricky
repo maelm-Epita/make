@@ -1,0 +1,21 @@
+) = haha
+$) = yo
+o = b
+b$onjour$ = monsieur
+
+FOO=$(BAR)
+BAR=4
+${FOO}=2
+
+all: $(haha) hey$  hey$
+	echo "wow this file is tricky" 
+	echo $(haha)
+	echo $(bbnjour)
+	echo $(FOO)
+	echo $($(FOO))
+	echo $4
+
+yo:
+	echo "this is the yo rule, is it reachable?"
+
+hey: 

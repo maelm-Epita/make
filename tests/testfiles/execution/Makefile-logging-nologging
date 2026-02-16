@@ -1,0 +1,3 @@
+all:
+	echo "this line should be logged" # this is a comment which should appear
+	@echo "this line should not be logged" # this comment should be hidden

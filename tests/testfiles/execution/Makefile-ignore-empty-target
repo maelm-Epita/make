@@ -1,0 +1,5 @@
+: test
+	echo $(VAR
+
+test:
+	echo hi

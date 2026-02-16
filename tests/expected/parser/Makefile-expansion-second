@@ -1,0 +1,8 @@
+# variables
+'FOO' = 'BAR'
+'BAR' = 'this-is-my-value'
+'this-is-my-value' = 'wow'
+# rules
+(all):
+	'echo $(BAR)'
+	'echo $(this-is-my-value)'
